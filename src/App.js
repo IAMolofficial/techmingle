@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Route, Routes } from 'react-router-dom';
+import About from './components//About/About';
+import Articles from './components/Blog/Articles';
+import Books from './components/Books/Books';
+import Clubs from './components/Clubs/Clubs';
+import Gaming from './components/Gaming/Gaming';
+import Jobs from './components/Internship/Jobs';
+import Podcast from './components/Podcast/Podcast';
+import Practice from './components/Practice/Practice';
+import Workshop from './components/Workshop/Workshop';
+import Navbar from './components/Navbar/Navbar';
+import PostPodcast from './components/Podcast/PostPodcast';
+import ViewPodcast from './components/Podcast/ViewPodcast';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <>
+   <Navbar/>
+      <div>
+    <Routes>        
+      <Route path="/"  element={<About/>} />
+      <Route path="/Gaming"  element={<Gaming/>} />
+      <Route path="/Practice"  element={<Practice/>} />
+      <Route path="/Podcast"  element={<Podcast/>} />
+      <Route path="/Workshop"  element={<Workshop/>} />
+      <Route path="/Books"  element={<Books/>} />
+      <Route path="/Jobs"  element={<Jobs/>} />
+      <Route path="/Articles"  element={<Articles/>} />
+      <Route path="/Clubs"  element={<Clubs/>} />
+      <Route path="/PostPodcast"  element={<PostPodcast/>}/>
+      <Route path="/ViewPodcast" element={<ViewPodcast/>}/>
+    </Routes>
     </div>
+    </>
   );
 }
 
