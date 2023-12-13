@@ -12,6 +12,8 @@ import Workshop from './components/Workshop/Workshop';
 import Navbar from './components/Navbar/Navbar';
 import PostPodcast from './components/Podcast/PostPodcast';
 import ViewPodcast from './components/Podcast/ViewPodcast';
+import PublishBooks from './components/Books/PublishBooks';
+import ViewBooks from './components/Books/ViewBooks';
 function App() {
   return (
    <>
@@ -29,6 +31,8 @@ function App() {
       <Route path="/Clubs"  element={<Clubs/>} />
       <Route path="/PostPodcast"  element={<PostPodcast/>}/>
       <Route path="/ViewPodcast" element={<ViewPodcast/>}/>
+      <Route path="/PublishBooks" element={<PublishBooks/>}/>
+      <Route path="/ViewBooks" element={<ViewBooks/>}/>
     </Routes>
     </div>
     </>
