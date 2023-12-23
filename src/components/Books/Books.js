@@ -32,6 +32,9 @@ const Books = () => {
               submitting.
             </li>
           </ul>
+          <div className="ViewBooks">
+          <Link to="../ViewBooks"> Second hand books </Link>
+        </div>
         </div>
         <div className="PublishBooks">
           <ul>
@@ -47,6 +50,9 @@ const Books = () => {
               Publish books where geeks can actually get better insights.{" "}
             </li>
           </ul>
+          <div className="Publish">
+          <Link to="../PublishBooks"> Publish Books</Link>
+        </div>
         </div>
       </div>
     </>

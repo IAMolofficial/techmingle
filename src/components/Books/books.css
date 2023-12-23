@@ -34,8 +34,15 @@
 
 .UploadBooks, .PublishBooks {
     width: 45%;
-background-color: azure;
+    background: rgba(217, 217, 217, 0.36);
+;
 }
 .UploadBooks li, .PublishBooks li {
     margin-bottom: 3rem;
+}
+.PublishBooks .Publish{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
 }

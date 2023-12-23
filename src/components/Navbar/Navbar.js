@@ -7,31 +7,31 @@ const Navbar = () => {
       <div className="brandName">TechMingle</div>
       <div className="navBar">
         <div className="About">
-          <Link to="/">About </Link>
+          <Link to="/"><box-icon name='joystick' animation='tada' ></box-icon>Home </Link>
         </div>
         <div className="Gaming">
           <Link to="/Gaming"><box-icon name='joystick' animation='tada' ></box-icon>Gaming</Link>
         </div>
         <div className="Practice">
-          <Link to="/Practice">Tech Practice</Link>
+          <Link to="/Practice"><box-icon name='joystick' animation='tada' ></box-icon>Tech Practice</Link>
         </div>
         <div className="Podcast">
-          <Link to="/Podcast">Podcast</Link>
+          <Link to="/Podcast"><box-icon name='joystick' animation='tada' ></box-icon>Podcast</Link>
         </div>
         <div className="Workshop">
-          <Link to="/Workshop">Programs & Workshops</Link>
+          <Link to="/Workshop"><box-icon name='joystick' animation='tada' ></box-icon>Workshops</Link>
         </div>
         <div className="Books">
-          <Link to="/Books">Books</Link>
+          <Link to="/Books"><box-icon name='joystick' animation='tada' ></box-icon>Books</Link>
         </div>
         <div className="Jobs">
-          <Link to="/Jobs">Jobs/Internships</Link>
+          <Link to="/Jobs"><box-icon name='joystick' animation='tada' ></box-icon>Jobs</Link>
         </div>
         <div className="Articles">
-          <Link to="/Articles">Articles</Link>
+          <Link to="/Articles"><box-icon name='joystick' animation='tada' ></box-icon>Articles</Link>
         </div>
         <div className="Clubs">
-          <Link to="/Clubs">Clubs</Link>
+          <Link to="/Clubs"><box-icon name='joystick' animation='tada' ></box-icon>Clubs</Link>
         </div>
       </div>
     </div>
