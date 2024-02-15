@@ -1,45 +1,44 @@
 import Card from "./Card";
 import "./about.css";
 import { Link } from "react-router-dom";
+import techfrenzy from "../assets/techfrenzy.png"
+import games from "../assets/games.png"
+import podcast from "../assets/podcast.png"
+import Articles from "../assets/articles.png"
+import books from "../assets/books.png"
+import workshop from "../assets/workshop.png"
+
 const About = () => {
   return (
     <>
-      <div className="container">
-        <div className="title">TechMingle is &nbsp;</div>
-        <span className="text">@ Social community for</span>
+      <div className="page-title">
+        <h2>Where tech enthusiasts and fresh minds unite to innovate and thrive</h2>
       </div>
-      <div className="card-container">
-        <Card
-          title="Gaming"
-          content="Play games to focus on tactics."
+      <div className="container">
+      <Card
+      image= {techfrenzy}
+          content="Place for competition among minds"
+          title="Tech-frenzy"
           button={
-            
+            <Link to="./Practice">
+              Visit
+            </Link>
+          }
+        />
+        <Card
+        image= {games}
+        content="Play games to focus on tactics."
+          title="Gaming"
+          button={
             <Link to="./Gaming">
               Visit
             </Link>
           }
         />
         <Card
-          title="Clubs"
-          content="Team where everyone can lead."
-          button={
-            <Link to="./Clubs">
-              Visit
-            </Link>
-          }
-        />
-        <Card
-          title="Programs"
-          content="Places to attend great minds"
-          button={
-            <Link to="./Workshop">
-              Visit
-            </Link>
-          }
-        />
-        <Card
-          title="Podcast"
+        image= {podcast}
           content="A show for individuals to look as a personality"
+          title="Podcast"
           button={
             <Link to="./Podcast">
               Visit
@@ -48,23 +47,35 @@ const About = () => {
 
         />
         <Card
-        title="Hackathons"
-        content="Place for competition among minds"
-        button={
-          <Link to="./practice">
-            Visit
-          </Link>
-        }
-      /><Card
-      title="Group Discussion"
-      content="Making communication better with languages"
+        image= {Articles}
+          content="Unlock the world bt reading articles"
+          title="Articles"
+          button={
+            <Link to="./articles">
+              Visit
+            </Link>
+          }
+        />
+      <Card
+      image= {workshop}
+      content="Place to attend great minds"
+      title="Workshop"
       button={
-        <Link to="./clubs">
+        <Link to="./workshop">
           Visit
         </Link>
       }
     />
-        
+        <Card
+        image= {books}
+        content="Code books, projects, case studies etc"
+        title="Books"
+        button={
+          <Link to="./Books">
+            Visit
+          </Link>
+        }
+      />
       </div>
     </>
   );
